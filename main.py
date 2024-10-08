@@ -23,7 +23,7 @@ def generate_climate_data_url(year: int, month: int) -> str:
         "searchMethod": "contains",  # Search method for station name
         "txtStationName": "vancouver",  # Station name to search for
         "timeframe": 1,  # Timeframe (1 likely means hourly)
-        "time": "LST",  # Time format (LST = Local Standard Time)
+        "time": "UTC",  # Time format (LST = Local Standard Time, UTC = Coordinated Universal Time)
         "Year": year,  # Year for requested data
         "Month": month,  # Month for requested data
         "Day": 11,  # Day (fixed to 11th of each month)
